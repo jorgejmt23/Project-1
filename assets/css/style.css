@@ -1,0 +1,139 @@
+html {
+    background-color: black
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 94, 0);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+}
+
+.jumbotron {
+    background-color: rgba(238, 232, 170, 0.664)
+}
+
+.modal-content {
+    background-color: rgb(250, 249, 249);
+}
+
+.col-sm {
+    text-align: center;
+}
+
+input[type="text"], textarea {
+    background-color: khaki;
+}
+
+input[type="text"]:focus, textarea {
+    background-color: greenyellow;
+}
+
+#yodabtn {
+    background-image: url("../images/yodabtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#sithbtn {
+    background-image: url("../images/sithbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#klinbtn {
+    background-image: url("../images/klinbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#minionbtn {
+    background-image: url("../images/minionbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#piratebtn {
+    background-image: url("../images/piratebtn2.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#morsebtn {
+    background-image: url("../images/morsebtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#ferbbtn {
+    background-image: url("../images/ferbbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#gunganbtn {
+    background-image: url("../images/gunganbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+.close {
+    display: none;
+}
+
+#closebtn {
+    z-index: 100;
+    position: relative;
+    float: right;
+    background-image: url("../images/closebtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
