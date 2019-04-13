@@ -9,7 +9,7 @@ $("#newbtn").click(function (event) {
     console.log(x);
     $("#error").empty();
     $("#trans-text").val("");
-    $("html").css({ "background-color": "black", "background-image": "none" });
+    $("html").css({ "background-color": "black", "background-image": "url(assets/images/fiction.jpg)" });
     $(".jumbotron").show();
     $("#original-h1").empty();
     $("#original-h3").empty();
