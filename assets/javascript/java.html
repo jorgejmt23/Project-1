@@ -189,6 +189,7 @@
 
             //app  code's functions
             function renderTranslation(result) {
+                $(".jumbotron").hide();
                 $('#translationModal').modal('toggle');
                 $("#original-h1").text("Your original text was:");
                 $("#original-h3").text(result.contents.text);
