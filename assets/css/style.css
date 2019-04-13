@@ -1,19 +1,31 @@
 html {
-    background-color: black
+    height: 100%;
+    /* The image used */
+    background-image: url(../images/fiction.jpg);
+      
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron{
+  text-align: center;
 }
 
 body {
     height: 100%;
     width: 100%;
-    color: rgb(255, 94, 0);
+    color: yellow;
     margin: auto;
     display: flex;
     flex-direction: column;
     max-width: 940px;
-}
-
-.jumbotron {
-    background-color: rgba(238, 232, 170, 0.664)
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;    
 }
 
 .modal-content {
@@ -135,5 +147,17 @@ input[type="text"]:focus, textarea {
     background-size: cover;
     background-repeat: no-repeat;
     height: 30px;
-    width: 30px;
-}
+    width: 30px;}
+
+/*.container-fluid {
+    background-image: url(../images/fiction.png);
+    background-size: cover;
+    height: 100%;
+    color:black;
+    background-color: orange;
+    width: 100%;}*/
+
+    .bg {
+        
+      }
+
