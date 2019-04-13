@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <script src="assets/javascript/duration.js"></script> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fascinate+Inline|Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  <title>Project 1 Home</title>
+</head>
+
+<body class="bg-transparent">
+
+  <header>
+    <div id="headercont">
+      <div class="divnav">
+        <nav>
+          <!--Add a class current to style the current page link -->
+          <a class="navlink current" href="index.html">Home</a>
+          <a class="navlink" href="learnmore.html">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="outter-div">
+    <div class="container">
+
+      <div id="jumbotron" class="jumbotron">
+        <h1 class="display-4">Language Translator</h1>
+        <p class="lead">Welcome all! This page aims to translate <del>boring</del>
+          common english into all sorts of languages from your favorite tv shows
+          and movies
+        </p>
+      </div>
+      <!-- data populated from apis calls -->
+      <div id="original-txt" class="container  cont">
+        <h1 id="original-h1"></h1>
+        <h3 id="original-h3"></h3>
+      </div>
+
+      <div id="trans-txt" class="container cont">
+        <h1 id="trans-h1"></h1>
+        <h3 id="trans-h3"></h3>
+      </div>
+
+      <div id="fact-txt" class="container cont">
+        <h1 id="fact-h1"></h1>
+        <h3 id="fact-h3"></h3>
+      </div>
+
+      <!-- Button trigger modal -->
+      <div>
+      <button id="newbtn" type="button" class="btn btn-outline-warning" data-toggle="modal"
+        data-target="#translationModal">
+        Translate Now!
+      </button>
+
+      <a id="learnbtn" class="btn btn-outline-success" href="learnmore.html" role="button">Learn more</a>
+    </div>
+      <!-- Modal  translation-->
+      <div class="modal fade" id="translationModal" tabindex="-1" role="dialog" aria-labelledby="translationModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Make a funny translation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <button id="closebtn" type="button" class="btn" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="needs-validation" novalidate>
+
+                <div class="form-group">
+                  <label for="trans-text">Text to translate:</label>
+                  <input type="text" class="form-control" id="trans-text" placeholder="Type text in English please"
+                    name="trans-text" required>
+                  <div id="validation-text"></div>
+                </div>
+                <div class="container">
+                  <div class="row ">
+                    <div class="col align-self-center">
+                      <button id="yodabtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Yoda</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="sithbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Sith</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="klinbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Klingon</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="piratebtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Pirate</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="minionbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Minion</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="gunganbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Gungan</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="morsebtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Morse</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="ferbbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To FerbLatin</p>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+                <h5 id="error"></h5>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/java.js"></script>
+</body>
+
+</html>
