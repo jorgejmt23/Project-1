@@ -19,7 +19,7 @@ font-family: 'Fredericka the Great', cursive; */
 font-family: 'Annie Use Your Telescope', cursive;
     height: 100%;
     width: 100%;
-    color: rgb(255, 60, 0);
+    color: rgb(231, 93, 0);
     font-weight: 900;
     margin: auto;
     display: flex;
@@ -27,7 +27,7 @@ font-family: 'Annie Use Your Telescope', cursive;
     max-width: 940px;
 }
 
-a:hover {
+/* a:hover {
     color: white;
     background: orangered;
 }
@@ -45,7 +45,7 @@ a, .navlink {
 .current {
     color: orangered;
     
-}
+} */
 
 #headercont {
     width: 100%;
@@ -79,12 +79,13 @@ a, .navlink {
 
 .lead{
     font-size: 30px;
+    color:aqua;
 }
 
-.learnMore{
+/* .learnMore{
     background-color: rgba(2, 2, 2, 0.7);
     margin-top: 15px;
-}
+} */
 
 h1{
     color: orangered;
@@ -96,8 +97,13 @@ h3{
     font-size: 20px;
 }
 
-.learn-h1{
-    
+#error{
+    color: aqua;
+    background-color: rgba(2, 2, 2, 0.7);
+    font-size: 40px;
+}
+
+/* .learn-h1{
     text-align: center;
     color: rgb(250, 246, 3);
     font-family: 'Fascinate Inline', cursive;
@@ -106,15 +112,18 @@ h3{
 .learn-h3{
     font-family: 'Annie Use Your Telescope', cursive;
     margin-bottom: 2px;
-}
+} */
 
-#newbtn, #learnbtn{
+#newbtn, #statsbtn{
     margin: 5px;
     font-weight: bold;
 } 
 
 .modal-content {
-    background-color: rgb(0, 42, 66);
+    background-color: rgb(243, 224, 198);
+}
+.modal-title{
+    font-size: 30px;
 }
 
 .col-sm {

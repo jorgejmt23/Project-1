@@ -18,17 +18,17 @@
 
 <body class="bg-transparent">
 
-  <header>
+  <!-- <header>
     <div id="headercont">
       <div class="divnav">
         <nav>
-          <!--Add a class current to style the current page link -->
+          Add a class current to style the current page link
           <a class="navlink current" href="index.html">Home</a>
           <a class="navlink" href="learnmore.html">About</a>
         </nav>
       </div>
     </div>
-  </header>
+  </header> -->
   <div class="outter-div">
     <div class="container">
 
@@ -55,14 +55,18 @@
         <h3 id="fact-h3"></h3>
       </div>
 
+      <p id="error"></p>
+
       <!-- Button trigger modal -->
       <div>
       <button id="newbtn" type="button" class="btn btn-warning" data-toggle="modal"
         data-target="#translationModal">
         Translate Now!
       </button>
-
-      <a id="learnbtn" class="btn btn-success" href="learnmore.html" role="button">Learn more</a>
+      <button id="statsbtn" class="btn btn-success" type="button"  data-toggle="modal"
+      data-target="#statisticsModal">
+      Statistics
+    </button>
     </div>
       <!-- Modal  translation-->
       <div class="modal fade" id="translationModal" tabindex="-1" role="dialog" aria-labelledby="translationModal"
@@ -70,7 +74,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Make a funny translation</h5>
+              <h5 class="modal-title">Make a funny translation</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -78,7 +82,6 @@
             </div>
             <div class="modal-body">
               <form class="needs-validation" novalidate>
-
                 <div class="form-group">
                   <label for="trans-text">Text to translate:</label>
                   <input type="text" class="form-control" id="trans-text" placeholder="Type text in English please"
@@ -112,12 +115,12 @@
                       <p class="btn-text">To Gungan</p>
                     </div>
                     <div class="col align-self-center">
-                      <button id="morsebtn" type="submit" class="btn btn-outline-warning"></button>
-                      <p class="btn-text">To Morse</p>
-                    </div>
-                    <div class="col align-self-center">
                       <button id="ferbbtn" type="submit" class="btn btn-outline-warning"></button>
                       <p class="btn-text">To FerbLatin</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="morsebtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Morse (BONUS)</p>
                     </div>
                   </div>
                 </div>
@@ -125,18 +128,76 @@
               </form>
             </div>
             <div class="modal-footer">
-                <h5 id="error"></h5>
               </div>
           </div>
         </div>
       </div>
+   <!-- Modal  statistics-->
+   <div class="modal fade" id="statisticsModal" tabindex="-1" role="dialog" aria-labelledby="statisticsModal"
+   aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Traslations Statistics</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+         <button id="closebtn" type="button" class="btn" data-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+           <div class="container">
+             <div class="row ">
+              <div class="col align-self-center">
+                <button id="yodabtn"  class="btn btn-outline-warning"></button>
+                <p id="yodastats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="sithbtn" class="btn btn-outline-warning"></button>
+                <p id="sithstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="klinbtn" class="btn btn-outline-warning"></button>
+                <p id="klingonstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="piratebtn" class="btn btn-outline-warning"></button>
+                <p id="piratestats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="minionbtn" class="btn btn-outline-warning"></button>
+                <p id="minionstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="gunganbtn" class="btn btn-outline-warning"></button>
+                <p id="gunganstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="ferbbtn" class="btn btn-outline-warning"></button>
+                <p id="ferbstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="morsebtn" class="btn btn-outline-warning"></button>
+                <p id="morsestats"></p>
+              </div>
+             </div>
+           </div>
+
+         </form>
+       </div>
+       <div class="modal-footer">
+          
+         </div>
+     </div>
+   </div>
+ </div>
 
     </div>
   </div>
-  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
   <script src="assets/javascript/java.js"></script>
 </body>
 
