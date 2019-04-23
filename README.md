@@ -47,3 +47,17 @@ Boring problems
 
 Translate fictional languages
 
+
+
+
+## Requirements for personal use
+
+**FireBase**
+
+You ned to create a firebase account, start a new app and add a data base.
+Copy and paste your firebase data to initialize
+
+**Rapid API KEY**
+
+For every language avialable you ned to  sign in to Rapid Api ang get a free key so you can get the translations.
+
